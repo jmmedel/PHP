@@ -25,4 +25,24 @@ Tip: Give the function a name that reflects what the function does!
 Function names are NOT case-sensitive.
 
 In the example below, we create a function named "writeMsg()". The opening curly brace ( { ) indicates the beginning of the function code and the closing curly brace ( } ) indicates the end of the function. The function outputs "Hello world!". To call the function, just write its name:
+
  -->
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<?php
+function writeMsg() {
+    echo "Hello world!";
+}
+
+writeMsg();
+?>
+
+</body>
+</html>
+ 
+ 
+ 
