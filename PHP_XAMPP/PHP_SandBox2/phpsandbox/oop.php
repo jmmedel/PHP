@@ -1,4 +1,5 @@
 <?php
+	// oop
 	class Person{
 		private $name;
 		private $email;
