@@ -28,8 +28,8 @@
   			echo date("Y m d");
   		?> 
   		<p>
-  			<a href="login.php">Login</a>
-  			<a href="register.php">Register</a>
+  			<a href="C:\xampp\htdocs\PHP\PHP\login.php">Login</a>
+  			<a href="C:\xampp\htdocs\PHP\PHP\register.php">Register</a>
   		</p>
   	</div>
 
