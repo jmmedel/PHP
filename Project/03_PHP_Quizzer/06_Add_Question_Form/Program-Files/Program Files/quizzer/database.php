@@ -1,9 +1,9 @@
 <?php
 //Create connection credentials
 $db_host = 'localhost';
-$db_name = 'quizzer';
+$db_name = 'shouts';
 $db_user = 'root';
-$db_pass = '121212aa';
+$db_pass = '';
 
 //Create mysqli object
 $mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name);
