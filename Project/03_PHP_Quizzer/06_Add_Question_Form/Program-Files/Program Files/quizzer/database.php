@@ -1,7 +1,7 @@
 <?php
 //Create connection credentials
 $db_host = 'localhost';
-$db_name = 'shouts';
+$db_name = 'quizzer';
 $db_user = 'root';
 $db_pass = '';
 
