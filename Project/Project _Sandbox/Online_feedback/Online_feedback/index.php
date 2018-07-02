@@ -4,6 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Heading  Done -->
 <head>
 
     <meta charset="utf-8">
@@ -214,6 +215,7 @@ Before we can look into the php code, you need to create a database called "feed
     </div>
     <!-- /.container -->
 	
+    <!-- Adding footer here Done -->
 	<?php include 'footer.php';?>
     
     <!-- jQuery -->

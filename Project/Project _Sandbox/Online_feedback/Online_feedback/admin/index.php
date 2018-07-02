@@ -27,7 +27,7 @@ $que=mysqli_query($conn,"select user and pass from admin where user='$email' and
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="kagaya">
 
     <title>Admin !</title>
 
