@@ -140,7 +140,7 @@ session_start();
         <div class="carousel-inner">
             <div class="item active">
                 
-                <div class="fill" style="background-image:url('images/feedback.jpg');"></div>
+                <div class="fill" style="background-image:url('images/feedback.png');"></div>
 				<div class="carousel-caption">
                     
                 </div>
@@ -154,7 +154,7 @@ session_start();
             </div>
 			
 			 <div class="item">
-                <div class="fill" style="background-image:url('images/feedback3.jpg');"></div>
+                <div class="fill" style="background-image:url('images/feedback2.jpg');"></div>
                 <div class="carousel-caption">
                    
                 </div>
@@ -214,9 +214,8 @@ Before we can look into the php code, you need to create a database called "feed
     </div>
     <!-- /.container -->
 	
-	<div class="navbar-fixed-bottom nav navbar-inverse text-center" style="padding:15px;height:40px; background:#66CCFF">
-		<span style="color:#FFFFFF">Developed By ....... 	<a href="http://www.phptpoint.com">Phptpoint.com</a> </span>
-	</div>
+	<?php include 'footer.php';?>
+    
     <!-- jQuery -->
     <script src="css/jquery.js"></script>
 
