@@ -122,23 +122,12 @@ session_start();
 	
     <!-- Page Content -->
     <div class="container">
-
         <div class="row">
             <div class="col-lg-12">
-               
-				
-				
-				
-	
-	
-				
-				
-				
 			<div class="col-sm-10" style="margin-top:60px;margin-bottom:80px">
                   <!-- he type here what need to say about the website -->
 				<h2>type here </h2>
-				<p class = "main-msg">  </p>
-	
+				 <p class = "main-msg">  </p>
 			</div>
 			
 			

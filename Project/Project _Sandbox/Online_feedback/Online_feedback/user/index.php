@@ -57,7 +57,7 @@ $users=mysqli_fetch_assoc($sql);
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
            
-            <li><a href="logout.php"  style="color:#FFFFFF">Logout</a></li>
+            <li ><a href="logout.php"  style="color:#FFFFFF">Logout</a></li>
           </ul>
           
         </div>
