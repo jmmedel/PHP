@@ -26,65 +26,10 @@ session_start();
 </head>
 
 <body>
-
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background:#66CCFF">
-        <div class="container" >
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.php" style="color:#FFFFFF">Online feedback System</a>
-				
-				
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    
-					 <li style="color:#FFFFFF">
-                        <a style="color:#FFFFFF" href="index.php"><i class="fa fa-home fa-fw"></i>Home</a>
-                    </li>
-					
-					<li style="color:#FFFFFF">
-                        <a style="color:#FFFFFF" href="index.php?info=about"><i class="fa fa-home fa-fw"></i>About</a>
-                    </li>
-					
-					<li><a style="color:#FFFFFF" href="index.php?info=registration"><i class="fa fa-sign-out fa-fw"></i>Registration</a></li>
-				
-				
-								
-	<li class="dropdown">
-        <a style="color:#FFFFFF" href="#" class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-sign-in fa-fw"></i>Login
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          
-          <li><a href="index.php?info=login">Student</a></li>
-		  <li><a href="index.php?info=faculty_login">Faculty</a></li> 
-          <li><a href="admin">Admin</a></li> 
-        </ul>
-      </li> 
-	  
-	
-	  
-	  
-	 <li>
-                        <a style="color:#FFFFFF" href="index.php?info=contact"><i class="fa fa-phone fa-fw"></i>Contact</a>
-                    </li>
-					 	
-					
-                   
-
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <?php include 'nav.php';?>
+    
+   
 
 <?php 
 					@$info=$_GET['info'];
@@ -190,19 +135,9 @@ session_start();
 				
 				
 			<div class="col-sm-10" style="margin-top:60px;margin-bottom:80px">
-				<h2>About Faculty feedback System</h2>
-				Student Feedback system for College in PHP(SOurce code) 
-Here we have developed the a faculty feedback system, which is generally used in the college to rate the faculty based on the performance...Here we have 2 modules such as administrator, student.
-
-Administrator is the one who creates the student account by adding all student info and assigning the username and password. 
-Admin als0 checks the result once all students entered the feedback..
-We can start the development from the login page, where we have given the option to login as admin and student...Here since we have only one admin account, so no need to create the a database to store admin info...so the admin username is "admin" and password is "sandeep"...select admin in the radio button and login 
-
-You can perform all admin actions such as login to the account and check result..
-
-I fyou entered the student user and password and selected student option, then it will show all student information and let you enter the feedback based on the subject..
-
-Before we can look into the php code, you need to create a database called "feed" with two tables in it..one as student and another one as take
+                  <!-- he type here what need to say about the website -->
+				<h2>type here </h2>
+				<p class = "main-msg">  </p>
 	
 			</div>
 			
