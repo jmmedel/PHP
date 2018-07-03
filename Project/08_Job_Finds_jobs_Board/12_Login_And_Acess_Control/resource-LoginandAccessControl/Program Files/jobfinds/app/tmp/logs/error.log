@@ -2971,3 +2971,19 @@ Stack Trace:
 #2 C:\xampp\htdocs\PHP\Project\08_Job_Finds_jobs_Board\12_Login_And_Acess_Control\resource-LoginandAccessControl\Program Files\jobfinds\lib\Cake\Core\App.php(902): App::_checkFatalError()
 #3 [internal function]: App::shutdown()
 #4 {main}
+2018-07-03 05:09:17 Error: Fatal Error (64): Cannot use 'String' as class name as it is reserved in [C:\xampp\htdocs\PHP\Project\08_Job_Finds_jobs_Board\12_Login_And_Acess_Control\resource-LoginandAccessControl\Program Files\jobfinds\lib\Cake\Utility\String.php, line 25]
+2018-07-03 05:09:17 Error: [FatalErrorException] Cannot use 'String' as class name as it is reserved
+Stack Trace:
+#0 C:\xampp\htdocs\PHP\Project\08_Job_Finds_jobs_Board\12_Login_And_Acess_Control\resource-LoginandAccessControl\Program Files\jobfinds\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(64, 'Cannot use 'Str...', 'C:\\xampp\\htdocs...', 25)
+#1 C:\xampp\htdocs\PHP\Project\08_Job_Finds_jobs_Board\12_Login_And_Acess_Control\resource-LoginandAccessControl\Program Files\jobfinds\lib\Cake\Core\App.php(929): ErrorHandler::handleError(64, 'Cannot use 'Str...', 'C:\\xampp\\htdocs...', 25, Array)
+#2 C:\xampp\htdocs\PHP\Project\08_Job_Finds_jobs_Board\12_Login_And_Acess_Control\resource-LoginandAccessControl\Program Files\jobfinds\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2018-07-03 05:10:39 Error: Fatal Error (64): Cannot use 'String' as class name as it is reserved in [C:\xampp\htdocs\PHP\Project\08_Job_Finds_jobs_Board\12_Login_And_Acess_Control\resource-LoginandAccessControl\Program Files\jobfinds\lib\Cake\Utility\String.php, line 25]
+2018-07-03 05:10:39 Error: [FatalErrorException] Cannot use 'String' as class name as it is reserved
+Stack Trace:
+#0 C:\xampp\htdocs\PHP\Project\08_Job_Finds_jobs_Board\12_Login_And_Acess_Control\resource-LoginandAccessControl\Program Files\jobfinds\lib\Cake\Error\ErrorHandler.php(204): ErrorHandler::handleFatalError(64, 'Cannot use 'Str...', 'C:\\xampp\\htdocs...', 25)
+#1 C:\xampp\htdocs\PHP\Project\08_Job_Finds_jobs_Board\12_Login_And_Acess_Control\resource-LoginandAccessControl\Program Files\jobfinds\lib\Cake\Core\App.php(929): ErrorHandler::handleError(64, 'Cannot use 'Str...', 'C:\\xampp\\htdocs...', 25, Array)
+#2 C:\xampp\htdocs\PHP\Project\08_Job_Finds_jobs_Board\12_Login_And_Acess_Control\resource-LoginandAccessControl\Program Files\jobfinds\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
