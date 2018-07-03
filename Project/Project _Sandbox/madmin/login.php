@@ -17,7 +17,7 @@
   <nav class="blue darken-2">
     <div class="container">
       <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo">Madmin</a>
+        <a href="index.php" class="brand-logo">Madmin</a>
       </div>
     </div>
   </nav>
@@ -28,7 +28,7 @@
         <div class="col s12 m8 offset-m2 l6 offset-l3">
           <div class="card-panel login blue darken-2 white-text center">
             <h2>Madmin Login</h2>
-            <form action="index.html">
+            <form action="index.php">
               <div class="input-field">
                 <i class="material-icons prefix">email</i>
                 <input type="email" id="email">

@@ -17,25 +17,25 @@
   <nav class="blue darken-2">
     <div class="container">
       <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo">Madmin</a>
+        <a href="index.php" class="brand-logo">Madmin</a>
         <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
           <i class="material-icons">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
           <li>
-            <a href="index.html">Dashboard</a>
+            <a href="index.php">Dashboard</a>
           </li>
           <li>
-            <a href="posts.html">Posts</a>
+            <a href="posts.php">Posts</a>
           </li>
           <li>
-            <a href="categories.html">Categories</a>
+            <a href="categories.php">Categories</a>
           </li>
           <li>
-            <a href="comments.html">Comments</a>
+            <a href="comments.php">Comments</a>
           </li>
           <li class="active">
-            <a href="users.html">Users</a>
+            <a href="users.php">Users</a>
           </li>
         </ul>
         <!-- Side nav -->
@@ -57,20 +57,20 @@
             </div>
           </li>
           <li>
-            <a href="index.html">
+            <a href="index.php">
               <i class="material-icons">dashboard</i> Dashboard</a>
           </li>
           <li>
-            <a href="posts.html">Posts</a>
+            <a href="posts.php">Posts</a>
           </li>
           <li>
-            <a href="categories.html">Categories</a>
+            <a href="categories.php">Categories</a>
           </li>
           <li>
-            <a href="comments.html">Comments</a>
+            <a href="comments.php">Comments</a>
           </li>
           <li>
-            <a href="users.html">Users</a>
+            <a href="users.php">Users</a>
           </li>
           <li>
             <div class="divider"></div>
@@ -79,7 +79,7 @@
             <a class="subheader">Account Controls</a>
           </li>
           <li>
-            <a href="login.html" class="waves-effect">Logout</a>
+            <a href="login.php" class="waves-effect">Logout</a>
           </li>
         </ul>
       </div>
@@ -113,7 +113,7 @@
                     <td>jdoe@gmail.com</td>
                     <td>Jan, 1 2018</td>
                     <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
+                      <a href="details.php" class="btn blue lighten-2">Details</a>
                     </td>
                   </tr>
                   <tr>
@@ -124,7 +124,7 @@
                     <td>lwatters@gmail.com</td>
                     <td>Jan, 3 2018</td>
                     <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
+                      <a href="details.php" class="btn blue lighten-2">Details</a>
                     </td>
                   </tr>
                   <tr>
@@ -135,7 +135,7 @@
                     <td>susan@gmail.com</td>
                     <td>Jan, 5 2018</td>
                     <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
+                      <a href="details.php" class="btn blue lighten-2">Details</a>
                     </td>
                   </tr>
                   <tr>
@@ -146,7 +146,7 @@
                     <td>jburke@gmail.com</td>
                     <td>Jan, 10 2018</td>
                     <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
+                      <a href="details.php" class="btn blue lighten-2">Details</a>
                     </td>
                   </tr>
                 </tbody>

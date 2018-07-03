@@ -20,7 +20,7 @@
   <nav class="blue darken-2">
     <div class="container">
       <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo">Madmin</a>
+        <a href="index.php" class="brand-logo">Madmin</a>
         <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
           <i class="material-icons">menu</i>
         </a>
