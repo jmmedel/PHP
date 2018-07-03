@@ -107,28 +107,28 @@
                     <td>Web Development</td>
                     <td>Jan 1, 2018</td>
                     <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
+                      <a href="details.php" class="btn blue lighten-2">Details</a>
                     </td>
                   </tr>
                   <tr>
                     <td>Graphic Design</td>
                     <td>Jan 2, 2018</td>
                     <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
+                      <a href="details.php" class="btn blue lighten-2">Details</a>
                     </td>
                   </tr>
                   <tr>
                     <td>Tech Gadgets</td>
                     <td>Jan 3, 2018</td>
                     <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
+                      <a href="details.php" class="btn blue lighten-2">Details</a>
                     </td>
                   </tr>
                   <tr>
                     <td>Other</td>
                     <td>Jan 5, 2018</td>
                     <td>
-                      <a href="details.html" class="btn blue lighten-2">Details</a>
+                      <a href="details.php" class="btn blue lighten-2">Details</a>
                     </td>
                   </tr>
                 </tbody>
