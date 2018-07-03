@@ -145,28 +145,8 @@
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
-
-  <script>
-    // Hide Sections
-    $('.section').hide();
-
-    setTimeout(function () {
-      $(document).ready(function () {
-        // Show sections
-        $('.section').fadeIn();
-
-        // Hide preloader
-        $('.loader').fadeOut();
-
-        //Init Side nav
-        $('.button-collapse').sideNav();
-
-        // Init Modal
-        $('.modal').modal();
-
-      });
-    }, 1000);
-  </script>
+  <script src="js/categories.js"></script>
+  
 </body>
 
 </html>
