@@ -188,9 +188,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="section blue darken-2 white-text center">
-    <p>Madmin Panel Copyright &copy; 2018</p>
-  </footer>
+  <?php include 'footer.php';?>
 
   <!-- Fixed Action Button -->
   <div class="fixed-action-btn">
