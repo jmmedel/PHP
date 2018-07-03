@@ -1,3 +1,8 @@
+<?php
+session_start();
+ require('dbconfig.php'); ?>
+
+
 <!DOCTYPE html>
 <html>
 

@@ -128,8 +128,13 @@ include('../dbconfig.php');
                         </li>
 		<!--feedback end-->
 						
-					
-						
+		<!-- New Adding-->			
+		<li>
+        <a href="#"><i class="fa fa-user fa-book"></i>myadmin<span class="fa arrow"></span></a>
+             <ul class="nav nav-second-level">              
+                 <li><a href="C:\xampp\htdocs\PHP\Project\Project _Sandbox\Online_feedback\Online_feedback\madmin\index.php"><i class="fa fa-eye"></i> madmin</a></li>                                                        
+            </ul>
+        </li>				
 						
 		<li>
 			<a href="dashboard.php?info=contact"><i class="fa fa-eye"></i> Contact us</a>
@@ -142,6 +147,8 @@ include('../dbconfig.php');
                 <!-- /.sidebar-collapse -->
             </div>
             <!-- /.navbar-static-side -->
+       
+        
         </nav>
 
         <div id="page-wrapper">
