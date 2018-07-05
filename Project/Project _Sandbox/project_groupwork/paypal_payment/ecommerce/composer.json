@@ -6,7 +6,7 @@
         "files": ["app/functions/helper.php"]
     },
     "require": {
-        "vlucas/phpdotenv": "^2.4",
+        "vlucas/phpdotenv": "^2.5",
         "altorouter/altorouter": "^1.2",
         "philo/laravel-blade": "^3.1",
         "illuminate/database": "^5.4",

@@ -12,6 +12,7 @@ return array(
     'App\\Classes\\Database' => $baseDir . '/app/classes/Database.php',
     'App\\Classes\\ErrorHandler' => $baseDir . '/app/classes/ErrorHandler.php',
     'App\\Classes\\Mail' => $baseDir . '/app/classes/Mail.php',
+    'App\\Classes\\PayableTrait' => $baseDir . '/app/classes/PayableTrait.php',
     'App\\Classes\\Redirect' => $baseDir . '/app/classes/Redirect.php',
     'App\\Classes\\Request' => $baseDir . '/app/classes/Request.php',
     'App\\Classes\\Role' => $baseDir . '/app/classes/Role.php',

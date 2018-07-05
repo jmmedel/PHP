@@ -181,6 +181,7 @@ class ComposerStaticInit5f936cbadb4b9b20acfcae1d81ea99b8
         'App\\Classes\\Database' => __DIR__ . '/../..' . '/app/classes/Database.php',
         'App\\Classes\\ErrorHandler' => __DIR__ . '/../..' . '/app/classes/ErrorHandler.php',
         'App\\Classes\\Mail' => __DIR__ . '/../..' . '/app/classes/Mail.php',
+        'App\\Classes\\PayableTrait' => __DIR__ . '/../..' . '/app/classes/PayableTrait.php',
         'App\\Classes\\Redirect' => __DIR__ . '/../..' . '/app/classes/Redirect.php',
         'App\\Classes\\Request' => __DIR__ . '/../..' . '/app/classes/Request.php',
         'App\\Classes\\Role' => __DIR__ . '/../..' . '/app/classes/Role.php',
