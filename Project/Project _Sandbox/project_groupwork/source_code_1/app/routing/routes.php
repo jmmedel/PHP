@@ -8,8 +8,8 @@ $router->map('POST', '/load-more', 'App\Controllers\IndexController@loadMoreProd
 $router->map('GET', '/product/[i:id]', 'App\Controllers\ProductController@show', 'product');
 $router->map('GET', '/product-details/[i:id]', 'App\Controllers\ProductController@get', 'product_details');
 
-//require_once  __DIR__ . '/cart.php';
+require_once  __DIR__ . '/cart.php';
 
-//require_once __DIR__ . '/auth.php';
+require_once __DIR__ . '/auth.php';
 
-//require_once __DIR__ . '/admin_routes.php';
+require_once __DIR__ . '/admin_routes.php';

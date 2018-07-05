@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitdd35bd6a04690ed8b78a2cab9cdea0ec
+class ComposerStaticInit5f936cbadb4b9b20acfcae1d81ea99b8
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -39,6 +39,7 @@ class ComposerStaticInitdd35bd6a04690ed8b78a2cab9cdea0ec
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
             'Philo\\Blade\\' => 12,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'I' => 
         array (
@@ -116,6 +117,10 @@ class ComposerStaticInitdd35bd6a04690ed8b78a2cab9cdea0ec
         array (
             0 => __DIR__ . '/..' . '/philo/laravel-blade/src',
         ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
         'Illuminate\\View\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/view',
@@ -176,8 +181,33 @@ class ComposerStaticInitdd35bd6a04690ed8b78a2cab9cdea0ec
 
     public static $classMap = array (
         'AltoRouter' => __DIR__ . '/..' . '/altorouter/altorouter/AltoRouter.php',
+        'App\\Classes\\CSRFToken' => __DIR__ . '/../..' . '/app/classes/CSRFToken.php',
+        'App\\Classes\\Cart' => __DIR__ . '/../..' . '/app/classes/Cart.php',
+        'App\\Classes\\Database' => __DIR__ . '/../..' . '/app/classes/Database.php',
+        'App\\Classes\\ErrorHandler' => __DIR__ . '/../..' . '/app/classes/ErrorHandler.php',
+        'App\\Classes\\Mail' => __DIR__ . '/../..' . '/app/classes/Mail.php',
+        'App\\Classes\\PayableTrait' => __DIR__ . '/../..' . '/app/classes/PayableTrait.php',
+        'App\\Classes\\Redirect' => __DIR__ . '/../..' . '/app/classes/Redirect.php',
+        'App\\Classes\\Request' => __DIR__ . '/../..' . '/app/classes/Request.php',
+        'App\\Classes\\Role' => __DIR__ . '/../..' . '/app/classes/Role.php',
+        'App\\Classes\\UploadFile' => __DIR__ . '/../..' . '/app/classes/UploadFile.php',
+        'App\\Classes\\ValidateRequest' => __DIR__ . '/../..' . '/app/classes/ValidateRequest.php',
+        'App\\Controllers\\Admin\\DashboardController' => __DIR__ . '/../..' . '/app/controllers/admin/DashboardController.php',
+        'App\\Controllers\\Admin\\ProductCategoryController' => __DIR__ . '/../..' . '/app/controllers/admin/ProductCategoryController.php',
+        'App\\Controllers\\Admin\\ProductController' => __DIR__ . '/../..' . '/app/controllers/admin/ProductController.php',
+        'App\\Controllers\\Admin\\SubCategoryController' => __DIR__ . '/../..' . '/app/controllers/admin/SubCategoryController.php',
+        'App\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/controllers/AuthController.php',
         'App\\Controllers\\BaseController' => __DIR__ . '/../..' . '/app/controllers/BaseController.php',
+        'App\\Controllers\\CartController' => __DIR__ . '/../..' . '/app/controllers/CartController.php',
         'App\\Controllers\\IndexController' => __DIR__ . '/../..' . '/app/controllers/IndexController.php',
+        'App\\Controllers\\ProductController' => __DIR__ . '/../..' . '/app/controllers/ProductController.php',
+        'App\\Models\\Category' => __DIR__ . '/../..' . '/app/models/Category.php',
+        'App\\Models\\Order' => __DIR__ . '/../..' . '/app/models/Order.php',
+        'App\\Models\\OrderDetail' => __DIR__ . '/../..' . '/app/models/OrderDetail.php',
+        'App\\Models\\Payment' => __DIR__ . '/../..' . '/app/models/Payment.php',
+        'App\\Models\\Product' => __DIR__ . '/../..' . '/app/models/Product.php',
+        'App\\Models\\SubCategory' => __DIR__ . '/../..' . '/app/models/SubCategory.php',
+        'App\\Models\\User' => __DIR__ . '/../..' . '/app/models/User.php',
         'App\\RouteDispatcher' => __DIR__ . '/../..' . '/app/routing/RouteDispatcher.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
@@ -194,7 +224,6 @@ class ComposerStaticInitdd35bd6a04690ed8b78a2cab9cdea0ec
         'Dotenv\\Exception\\ValidationException' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Exception/ValidationException.php',
         'Dotenv\\Loader' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Loader.php',
         'Dotenv\\Validator' => __DIR__ . '/..' . '/vlucas/phpdotenv/src/Validator.php',
-        'EasyPeasyICS' => __DIR__ . '/..' . '/phpmailer/phpmailer/extras/EasyPeasyICS.php',
         'GuzzleHttp\\Client' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Client.php',
         'GuzzleHttp\\ClientInterface' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/ClientInterface.php',
         'GuzzleHttp\\Cookie\\CookieJar' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Cookie/CookieJar.php',
@@ -576,10 +605,11 @@ class ComposerStaticInitdd35bd6a04690ed8b78a2cab9cdea0ec
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/illuminate/view/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/illuminate/view/ViewServiceProvider.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
-        'PHPMailer' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmailer.php',
-        'PHPMailerOAuth' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmaileroauth.php',
-        'PHPMailerOAuthGoogle' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmaileroauthgoogle.php',
-        'POP3' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.pop3.php',
+        'PHPMailer\\PHPMailer\\Exception' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/Exception.php',
+        'PHPMailer\\PHPMailer\\OAuth' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/OAuth.php',
+        'PHPMailer\\PHPMailer\\PHPMailer' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/PHPMailer.php',
+        'PHPMailer\\PHPMailer\\POP3' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/POP3.php',
+        'PHPMailer\\PHPMailer\\SMTP' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/SMTP.php',
         'Philo\\Blade\\Blade' => __DIR__ . '/..' . '/philo/laravel-blade/src/Blade.php',
         'Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerExceptionInterface.php',
         'Psr\\Container\\ContainerInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerInterface.php',
@@ -604,7 +634,6 @@ class ComposerStaticInitdd35bd6a04690ed8b78a2cab9cdea0ec
         'Psr\\SimpleCache\\CacheException' => __DIR__ . '/..' . '/psr/simple-cache/src/CacheException.php',
         'Psr\\SimpleCache\\CacheInterface' => __DIR__ . '/..' . '/psr/simple-cache/src/CacheInterface.php',
         'Psr\\SimpleCache\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/simple-cache/src/InvalidArgumentException.php',
-        'SMTP' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.smtp.php',
         'Stripe\\Account' => __DIR__ . '/..' . '/stripe/stripe-php/lib/Account.php',
         'Stripe\\AlipayAccount' => __DIR__ . '/..' . '/stripe/stripe-php/lib/AlipayAccount.php',
         'Stripe\\ApiRequestor' => __DIR__ . '/..' . '/stripe/stripe-php/lib/ApiRequestor.php',
@@ -803,8 +832,6 @@ class ComposerStaticInitdd35bd6a04690ed8b78a2cab9cdea0ec
         'Whoops\\Util\\Misc' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/Misc.php',
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
-        'ntlm_sasl_client_class' => __DIR__ . '/..' . '/phpmailer/phpmailer/extras/ntlm_sasl_client.php',
-        'phpmailerException' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmailer.php',
         'voku\\helper\\Paginator' => __DIR__ . '/..' . '/voku/pagination/src/voku/helper/Paginator.php',
         'voku\\helper\\PaginatorHelper' => __DIR__ . '/..' . '/voku/pagination/src/voku/helper/PaginatorHelper.php',
     );
@@ -812,10 +839,10 @@ class ComposerStaticInitdd35bd6a04690ed8b78a2cab9cdea0ec
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitdd35bd6a04690ed8b78a2cab9cdea0ec::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitdd35bd6a04690ed8b78a2cab9cdea0ec::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInitdd35bd6a04690ed8b78a2cab9cdea0ec::$fallbackDirsPsr4;
-            $loader->classMap = ComposerStaticInitdd35bd6a04690ed8b78a2cab9cdea0ec::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit5f936cbadb4b9b20acfcae1d81ea99b8::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit5f936cbadb4b9b20acfcae1d81ea99b8::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit5f936cbadb4b9b20acfcae1d81ea99b8::$fallbackDirsPsr4;
+            $loader->classMap = ComposerStaticInit5f936cbadb4b9b20acfcae1d81ea99b8::$classMap;
 
         }, null, ClassLoader::class);
     }
