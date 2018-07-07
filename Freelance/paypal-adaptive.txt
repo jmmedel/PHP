@@ -1,0 +1,85 @@
+
+function payRequest(){
+
+Global $con;
+
+Global $paypal_email;
+
+Global $login_seller_id;
+
+Global $login_seller_paypal_email;
+
+Global $amount;
+
+Global $site_url;	
+
+$createPacket = array(
+
+"actionType" => "PAY",
+
+"currencyCode" => "USD",
+
+"senderEmail" => "$paypal_email",
+
+"receiverList" => array(
+
+"receiver" => array(
+
+"email" => "$login_seller_paypal_email",
+
+"amount" => "$amount.00"
+
+)
+
+),
+
+"returnUrl" => "$site_url/revenue.php",
+
+"cancelUrl" => "$site_url/revenue.php",
+
+"requestEnvelope" => array(
+
+"errorLanguage" => "en_US",
+
+"detailLevel" => "ReturnAll"
+
+)
+
+);
+
+$response = $this->paypalSend($createPacket,"Pay");
+
+$response_status = $response["paymentInfoList"]["paymentInfo"]["0"]["transactionStatus"];
+
+$detailsPacket = array(
+
+"requestEnvelope" => array(
+
+"errorLanguage" => "en_US",
+
+"detailLevel" => "ReturnAll"
+
+),
+
+"payKey" => $response["payKey"],
+
+"receiverOptions" => array(
+
+"receiver" => array( "email" => "$login_seller_paypal_email" ),
+
+"InvoiceData" => array(
+
+"item" => array( "name" => "Computerfever.com Revenues Withdraw Payment." )
+
+)
+
+)
+
+);
+
+$responseDetails = $this->paypalSend($detailsPacket,"SetPaymentOptions");
+
+
+
+
+}
