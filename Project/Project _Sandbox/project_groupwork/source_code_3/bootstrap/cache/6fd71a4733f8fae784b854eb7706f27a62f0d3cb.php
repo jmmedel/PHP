@@ -5,7 +5,7 @@
     
     <div class="image-holder text-center">
         <img src="/images/terry.png" alt="Terry" title="Admin">
-        <p>{{ user()->fullname }}</p>
+        <p><?php echo e(user()->fullname); ?></p>
     </div>
     
     <ul class="vertical menu">
