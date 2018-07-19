@@ -16,13 +16,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('profile', [
-    'middleware' => 'auth',
-    'uses' => 'UserController@showProfile'
- ]);
 
- 
-Route::get('/usercontroller/path',[
-   'middleware' => 'First',
-   'uses' => 'UserController@showPath'
-]);
+ Route::get('/usercontroller/path',[
+    'middleware' => 'First',
+    'uses' => 'UserController@showPath'
+ ]);
