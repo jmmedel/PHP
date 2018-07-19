@@ -21,3 +21,6 @@ Route::get('/', function () {
     'middleware' => 'First',
     'uses' => 'UserController@showPath'
  ]);
+
+ Route::resource('my','MyController');
+ Route::Controllers('test','ImplicitController');
