@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/foo/bar','UriController@index');
+
+Route::get('/register',function(){
+    return view('register');
+ });
+ Route::post('/user/register',array('uses'=>'UserRegistration@postRegister'));
