@@ -26,7 +26,7 @@
 		<title>My Website</title>
 	</head>
 <body>
-	<form method="GET" action="get_post.php">
+	<form method="GET" action="07_get_post.php">
 		<div>
 			<label>Name</label><br>
 			<input type="text" name="name">
@@ -39,10 +39,10 @@
 	</form>
 	<ul>
 		<li>
-			<a href="get_post.php?name=Brad">Brad</a>
+			<a href="07_get_post.php?name=Brad">Brad</a>
 		</li>
 		<li>
-			<a href="get_post.php?name=Steve">Steve</a>
+			<a href="07_get_post.php?name=Steve">Steve</a>
 		</li>
 	</ul>
 	<h1><?php echo "{$name}'s Profile"; ?></h1>
