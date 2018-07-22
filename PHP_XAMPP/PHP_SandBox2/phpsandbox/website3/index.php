@@ -56,7 +56,7 @@
 <html>
 <head>
 	<title>Contact Us</title>
-	<link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
 </head>
 <body>
 	<nav class="navbar navbar-default">
