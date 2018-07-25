@@ -1,4 +1,5 @@
 <?php
+	//Done
 	require('config/config.php');
 	require('config/db.php');
 
