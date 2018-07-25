@@ -23,9 +23,9 @@
       //Here is an example
       $people = array(array("firstname" => "Daniel", "lastname" => "Nielsen", "age" => 26), array("firstname" => "Jane", "lastname" => "Doe", "age" => 45));
       //Here is an example of how we can output the data
-      echo $people[0]["firstname"]
+      echo $people[0]["firstname"];
       //This will output "Daniel"
-      echo $people[1]["firstname"]
+      echo $people[1]["firstname"];
       //This will output "Jane"
     ?>
   </body>
