@@ -1,5 +1,6 @@
 <?php
-  class User {
+//Done
+class User {
     protected $name;
     protected $age;
 
