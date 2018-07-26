@@ -11,6 +11,27 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
+});
+*/
+
+Route::get('/',"PublicController@index");
+
+
+Route::prefix('admin')->group(function(){
+
+    Route::get('users', function(){
+        return "admin users";
+    });
+
+    Route::get('posts',function(){
+        return "admin posts";
+    });
+
+    Route::get('user/{userId}',function($userId){
+        return 'user id:' . $userId;
+    });
+
 });
