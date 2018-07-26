@@ -11,4 +11,6 @@ class PublicController extends Controller
         return view('welcome');
     }
 
+    public function userInfo($userId,$name){
+    }
 }

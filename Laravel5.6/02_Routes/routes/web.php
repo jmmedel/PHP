@@ -30,8 +30,6 @@ Route::prefix('admin')->group(function(){
         return "admin posts";
     });
 
-    Route::get('user/{userId}',function($userId){
-        return 'user id:' . $userId;
-    });
+    Route::get('user/{userId}/{name}','PublicController@userInfo');
 
 });
