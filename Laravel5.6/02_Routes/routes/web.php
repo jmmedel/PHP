@@ -20,11 +20,9 @@ Route::get('/', function () {
 Route::get('/',"PublicController@index");
 
 
-Route::prefix('admin')->group(function(){
-
-    Route::get('users', function(){
-        return "admin users";
-    });
+Route::namespace('Admin')->prefix('admin')->group(function(){
+    // Add location the controoler 
+    Route::get('users', 'UserController@listUsers');
 
     Route::get('posts',function(){
         return "admin posts";
