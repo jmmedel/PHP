@@ -28,10 +28,10 @@ Route::namespace('Admin')->prefix('admin')->group(function(){
         return route('welcome',['name' => 'John', 'age' => '25']);
     });
 
-    Route::get('user/{userId}/{name}','PublicController@userInfo');
+    //Route::get('user/{userId}/{name}','PublicController@userInfo');
 
 });
 
-Route::redirect('/old','/new',301);
+//Route::redirect('/old','/new',301);
 
 //Route::get('/{name}/{age}',"PublicController@index")->name('welcome');
