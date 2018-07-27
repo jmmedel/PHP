@@ -17,7 +17,7 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/',"PublicController@index");
+
 
 
 Route::namespace('Admin')->prefix('admin')->group(function(){
@@ -25,9 +25,13 @@ Route::namespace('Admin')->prefix('admin')->group(function(){
     Route::get('users', 'UserController@listUsers');
 
     Route::get('posts',function(){
-        return "admin posts";
+        return route('welcome',['name' => 'John', 'age' => '25']);
     });
 
     Route::get('user/{userId}/{name}','PublicController@userInfo');
 
 });
+
+
+
+Route::get('/{name}/{age}',"PublicController@index")->name('welcome');
