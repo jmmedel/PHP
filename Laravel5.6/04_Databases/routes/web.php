@@ -18,11 +18,13 @@ Route::get('/', function () {
 */
 
 
-
+Route::get('posts','PublicController@displayPosts')->name('displayPosts');
 
 Route::namespace('Admin')->prefix('admin')->group(function(){
     // Add location the controoler 
     Route::get('users', 'UserController@listUsers');
+
+    
 
     Route::get('posts',function(){
         return route('welcome',['name' => 'John', 'age' => '25']);

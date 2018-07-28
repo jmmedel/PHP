@@ -3,7 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// Dont forget toadd this ins not automatic at this point 
+/*
 
+FatalThrowableError (E_ERROR)
+Class 'App\Http\Controllers\Post' not found
+
+*/
+use App\Post;
 class PublicController extends Controller
 {
     //
@@ -12,5 +19,11 @@ class PublicController extends Controller
     }
 
     public function userInfo($userId,$name){
+    }
+
+
+    public function displayPosts(){
+        $posts = Post::all();
+        return var_dump($posts);
     }
 }
