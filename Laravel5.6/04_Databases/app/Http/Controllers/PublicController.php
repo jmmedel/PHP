@@ -24,6 +24,10 @@ class PublicController extends Controller
 
     public function displayPosts(){
         $posts = Post::all();
-        return var_dump($posts);
+
+        foreach ($posts as $post){
+            print $post-> title .'<br>';
+        }
+       // return var_dump($posts);
     }
 }
