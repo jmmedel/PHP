@@ -34,6 +34,8 @@ Route::namespace('Admin')->prefix('admin')->group(function(){
 
 });
 
+Route::get('/','welcome');
+Route::view('/about','about');
 //Route::redirect('/old','/new',301);
 
 //Route::get('/{name}/{age}',"PublicController@index")->name('welcome');
