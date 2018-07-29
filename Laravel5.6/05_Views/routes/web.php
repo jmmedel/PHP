@@ -11,31 +11,7 @@
 |
 */
 
-/*
-Route::get('/', function () {
-    return view('welcome');
-});
-*/
 
-
-Route::get('posts','PublicController@displayPosts')->name('displayPosts');
-
-Route::namespace('Admin')->prefix('admin')->group(function(){
-    // Add location the controoler 
-    Route::get('users', 'UserController@listUsers');
-
-    
-
-    Route::get('posts',function(){
-        return route('welcome',['name' => 'John', 'age' => '25']);
-    });
-
-    //Route::get('user/{userId}/{name}','PublicController@userInfo');
-
-});
-
-Route::get('/','welcome');
+//return controller fucntion index to view welcome
+Route::get('/','PublicController@index')->name();
 Route::view('/about','about');
-//Route::redirect('/old','/new',301);
-
-//Route::get('/{name}/{age}',"PublicController@index")->name('welcome');

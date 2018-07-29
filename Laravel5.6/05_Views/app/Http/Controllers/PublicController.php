@@ -10,24 +10,17 @@ FatalThrowableError (E_ERROR)
 Class 'App\Http\Controllers\Post' not found
 
 */
+//add post this is not automathic to access Post
 use App\Post;
 class PublicController extends Controller
 {
     //
-    public function index($name){
-        return view('welcome');
+    public function index(){
+
+       $posts = Post::all();
+        return view('welcome',compact('posts'));
+      
     }
 
-    public function userInfo($userId,$name){
-    }
-
-
-    public function displayPosts(){
-        $posts = Post::all();
-
-        foreach ($posts as $post){
-            print $post-> title .'<br>';
-        }
-       // return var_dump($posts);
-    }
+   
 }
