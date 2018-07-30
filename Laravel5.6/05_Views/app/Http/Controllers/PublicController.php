@@ -34,6 +34,7 @@ class PublicController extends Controller
 
            echo "File name" .$file->getClientOriginalName();
            echo "<br>";
+           $file->move('images',$file->getClientOriginalName());
         }else{
             return "NO";
         }

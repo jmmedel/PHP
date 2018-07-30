@@ -12,7 +12,11 @@
             </div>
     
             <div class = "form-group">
-                <input  class =  "form-control" name="email" type="email" placeholder="Email">
+                <input  class =  "form-control" name="email[]" type="email" placeholder=" Work Email">
+            </div>
+
+            <div class = "form-group">
+                    <input  class =  "form-control" name="email[]" type="email" placeholder="Personal Email">
             </div>
     
             <div class = "form-group">
