@@ -15,3 +15,8 @@
 //return controller fucntion index to view welcome
 Route::get('/','PublicController@index')->name('welcome');
 Route::view('/about','about')->name('about');
+Route::get('/contact','PublicController@contact')->name('contact');
+
+Route::post('contact','PublicController@contactPost')->name('contactPost');
+
+

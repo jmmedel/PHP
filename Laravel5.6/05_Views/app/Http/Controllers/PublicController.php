@@ -22,5 +22,25 @@ class PublicController extends Controller
       
     }
 
+    public function contact(){
+
+        return view('contact');
+    }
+
+    public function contactPost(Request $request){
+        
+        if($request->hasfile('attachment')){
+           $file = $request->file('attachment');
+
+           echo "File name" .$file->getClientOriginalName();
+           echo "<br>";
+        }else{
+            return "NO";
+        }
+        $name = $request['message'];
+        var_dump($request->input('message'));
+        echo "<br>";
+        var_dump($name);
+    }
    
 }
