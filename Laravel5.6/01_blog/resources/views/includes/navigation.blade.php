@@ -9,18 +9,18 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('index') }}">Home</a>
+          <a class="nav-link" {{ Request::route()-> getName()== 'index' ? "style=color:red;" : "" }}  href="{{ route('index') }}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('about') }}">About</a>
+          <a class="nav-link" {{ Request::route()-> getName()== 'about' ? "style=color:red;" : "" }}  href="{{ route('about') }}">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+          <a class="nav-link" {{ Request::route()-> getName()== 'contact' ? "style=color:red;" : "" }}  href="{{ route('contact') }}">Contact</a>
         </li>
 
         @if(Auth::check())
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a>
+          <a class="nav-link" {{ Request::route()-> getName()== 'dashboard' ? "style=color:red;" : "" }}  href="{{ route('dashboard') }}">Dashboard</a>
         </li>
 
         <li class="nav-item">
@@ -30,11 +30,11 @@
 
           @else
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('login') }}">Login</a>
+            <a class="nav-link" {{ Request::route()-> getName()== 'login' ? "style=color:red;" : "" }}  href="{{ route('login') }}">Login</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('register') }}">Register</a>
+            <a class="nav-link" {{ Request::route()-> getName()== 'register' ? "style=color:red;" : "" }}  href="{{ route('register') }}">Register</a>
           </li>
 
         @endif
