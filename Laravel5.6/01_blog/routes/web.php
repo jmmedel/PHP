@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('/','PublicController@index' );
+Route::get('/','PublicController@index' )->name('index');
 // all ways / on the {id} 
-Route::get('/post/{id}','PublicController@singlePost');
-Route::get('/about','PublicController@about');
-Route::get('/contact','PublicController@contact');
-Route::post('/contact','PublicController@contactPost');
+Route::get('/post/{id}','PublicController@singlePost')->name('singlePost');
+Route::get('/about','PublicController@about')->name('about');
+Route::get('/contact','PublicController@contact')->name('contact');
+Route::post('/contact','PublicController@contactPost')->name('contactPost');
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
-Auth::routes();
+Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+
 
