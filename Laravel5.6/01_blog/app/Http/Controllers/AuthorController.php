@@ -21,23 +21,16 @@ class AuthorController extends Controller
 
     }
 
-    public function posts(){
-
-        return view('author.posts');
-
-    }
-
     public function comments(){
 
         return view('author.comments');
 
     }
 
-    public function users(){
+    public function post(){
 
-        return view('author.users');
+        return view('author.posts');
 
     }
-
 
 }
