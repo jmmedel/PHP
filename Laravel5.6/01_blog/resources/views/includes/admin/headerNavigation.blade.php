@@ -29,10 +29,11 @@
                     </a>
 
                    
-
-                    <a href="#" class="dropdown-item">
-                        <i class="fa fa-lock"></i> Logout
+                    <form method="POST" id="logout-form" action="{{ route('logout') }}">@csrf</form>
+                    <a href="#" onclick="document.getElementById('logout-form').submit();" class="dropdown-item">
+                    <i class="fa fa-lock"></i> Logout
                     </a>
+                    
                 </div>
             </li>
         </ul>

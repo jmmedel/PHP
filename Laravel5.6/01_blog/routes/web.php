@@ -19,6 +19,9 @@ Route::get('/contact','PublicController@contact')->name('contact');
 Route::post('/contact','PublicController@contactPost')->name('contactPost');
 Auth::routes();
 Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+Route::prefix('user')->group(function(){
+    Route::get()
+});
 Route::prefix('admin')->group(function(){
     Route::get('/dashboard','AdminController@dashboard')->name('adminDashboard');
 });
