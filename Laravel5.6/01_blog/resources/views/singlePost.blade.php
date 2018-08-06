@@ -8,9 +8,9 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
-             
+              <h1>{{ $post->title }}</h1>
               <span class="meta">Posted by
-                <a href="#">Start Bootstrap</a>
+                <a href="#">{{  }}</a>
                 on August 24, 2018</span>
             </div>
           </div>
