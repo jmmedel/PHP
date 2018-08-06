@@ -10,7 +10,7 @@
 
     <title>@yield('title','kagaya blog')</title>
 
-    <!-- Bootstrap core CSS  you need to add this -->
+    <!-- Bootstrap core CSS  -->
     <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }} " rel="stylesheet">
 
     <!-- Custom fonts for this template -->
