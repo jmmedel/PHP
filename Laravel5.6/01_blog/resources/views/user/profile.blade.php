@@ -31,7 +31,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label">Name</label>
-                                                <input class="form-control">
+                                                <input name="name" class="form-control" value="{{ Auth::user()->name }}">
                                             </div>
                                         </div>
 
@@ -42,7 +42,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-control-label">Email Address</label>
-                                                <input class="form-control">
+                                                <input  name="email" class="form-control" value="{{ Auth::user()->email }}" >
                                             </div>
                                         </div>
                                     </div>
@@ -61,16 +61,24 @@
 
                                 <div class="col-md-8">
                                     <div class="row">
-                                        <div class="col-md-6">
+
+                                        <div class="col-md-4">
+                                                <div class="form-group">
+                                                        <label class="form-control-label"> Current Password</label>
+                                                        <input type="password" class="form-control">
+                                                 </div>
+                                        </div>
+
+                                        <div class="col-md-4">
                                             <div class="form-group">
-                                                <label class="form-control-label">Password</label>
+                                                <label class="form-control-label"> NEW Password</label>
                                                 <input type="password" class="form-control">
                                             </div>
                                         </div>
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-4">
                                             <div class="form-group">
-                                                <label class="form-control-label">Password Confirmation</label>
+                                                <label class="form-control-label"> NEW Password Confirmation</label>
                                                 <input type="password" class="form-control">
                                             </div>
                                         </div>
