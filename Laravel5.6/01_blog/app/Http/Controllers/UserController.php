@@ -1,9 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+//  you need to add this manual in visual studio code this is not automatic
+use App\Http\Requests\UserUpdate;
 
 use Illuminate\Http\Request;
-
+// you need to add this manual in visual studio code this is not automatic
+use Illuminate\Support\Facades\Auth;
 class UserController extends Controller
 {
     //
@@ -21,4 +24,13 @@ class UserController extends Controller
         return view('user.profile');
     }
 
+
+    public function ProfilePost(UserUpdate $request){
+        
+        $user = Auth::user();
+        $user->name = $request['name'];
+        $user->email = $request['email'];
+        $user->save();
+       return back();
+    }
 }

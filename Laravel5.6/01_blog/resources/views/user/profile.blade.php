@@ -18,8 +18,19 @@
                         <div class="card-header bg-light">
                             Account Settings
                         </div>
+                        @if($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach($errors->all() as $error) 
+                                    <li>
+                                        {{ $error }}
+                                    </li>
 
-                        <form action="" method="POST">
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        <form action="{{ route('userProfilePost') }}" method="POST">
                         @csrf
                         <div class="card-body">
                             <div class="row mb-5">
