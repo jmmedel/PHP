@@ -19,7 +19,7 @@
                 </li>
 
              
-
+                @if(Auth::user()->author == true)
                 <li class="nav-title">Author</li>
 
                 <li class="nav-item nav-dropdown">
@@ -39,7 +39,9 @@
                             <i class="icon icon-book-open"></i> Comments 
                         </a>  
                 </li>
+                @endif
 
+                @if(Auth::user()->admin == true)
                 <li class="nav-title">Admin</li>
 
                 <li class="nav-item nav-dropdown">
@@ -67,6 +69,7 @@
                         </a>  
                 </li>
 
+                @endif
             </ul>
         </nav>
     </div>
