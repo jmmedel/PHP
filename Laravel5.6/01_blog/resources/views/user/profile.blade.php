@@ -19,6 +19,8 @@
                             Account Settings
                         </div>
 
+                        <form action="" method="POST">
+                        @csrf
                         <div class="card-body">
                             <div class="row mb-5">
                                 <div class="col-md-4 mb-4">
@@ -65,21 +67,21 @@
                                         <div class="col-md-4">
                                                 <div class="form-group">
                                                         <label class="form-control-label"> Current Password</label>
-                                                        <input type="password" class="form-control">
+                                                        <input  name="password" type="password" class="form-control">
                                                  </div>
                                         </div>
 
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label class="form-control-label"> NEW Password</label>
-                                                <input type="password" class="form-control">
+                                                <input  name="new_password" type="password" class="form-control">
                                             </div>
                                         </div>
 
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label class="form-control-label"> NEW Password Confirmation</label>
-                                                <input type="password" class="form-control">
+                                                <input  name="new_password_confirmation" type="password" class="form-control">
                                             </div>
                                         </div>
                                     </div>
@@ -90,6 +92,8 @@
                         <div class="card-footer bg-light text-right">
                             <button type="submit" class="btn btn-primary">Save Changes</button>
                         </div>
+
+                    </form>
                     </div>
                 </div>
             </div>
