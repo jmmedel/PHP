@@ -30,7 +30,9 @@
                                 <td class="text-nowrap"><a href="{{ route('singlePost',$comment->id) }}">{{ $comment->post->title }}</a></td>
                                 <td>{{ $comment->content }}</td>
                                 <td>{{ \Carbon\Carbon::parse($comment->created_at)->diffForHumans() }}</td>
-                                <td><a href="#">X</a></td>
+                                <td>
+                                    <a href="#">X</a>
+                                </td>
                             </tr>
                            
                             @endforeach
